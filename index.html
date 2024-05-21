@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex w-100 h-100 p-0 mx-auto flex-column min-vh-100 bg-dark">
+    <!-- Navigation Bar -->
+    <header class="header mb-auto">
+        <nav class="navbar navbar-expand-sm text-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#Home">Joshua Ross<br><sup class="sub-brand">| EasedMango</sup></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-collapse" href="#Home">Home<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-collapse" href="#About">About<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-collapse" href="#Contact">Contact<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-collapse" href="#Portfolio">Portfolio<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main flex-grow-1 justify-content-center align-items-start">
+        <div class="target-anchor" id="Home"></div>
+        <div class="section container" aria-hidden="true">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Welcome</h1>
+                    <p class="flex-wrap lead mt-4">I'm Joshua, a programmer focused around games, interactive
+                        installations,
+                        music, and sometimes art. This site contains my portfolio and basic contact info</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div id="homePageCarousel" class="container-fluid"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-anchor" id="About"></div>
+        <div class="section container" aria-hidden="true">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>About me</h1>
+                    <p class="flex-wrap lead mt-4">I'm a programmer, game dev, and artist from Ontario.
+                        I started programming in highschool and have loved it ever since. Since then I've worked on art
+                        installations, games, and research projects. I'm currently studying Game Programming at Humber
+                        College where I've learned C++, graphics (mainly OpenGL and Vulkan), and many low-level
+                        concepts. I've built my own C++ OpenGL game engine from the ground up. But overall I'd say
+                        I'm a creative programmer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-anchor" id="Contact"></div>
+        <div class="section container" aria-hidden="true">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Contact Me</h1>
+                    <p class="lead mt-4">If you have any questions or just want to get in touch, feel free to reach out
+                        to me via email.</p>
+                    <hr class="my-4">
+                    <div class="row">
+                        <p class="col-6 mb-2">
+                            Email: <br><span class="user-select-all fw-bold text-primary">contact@joshua-ross.com</span>
+                        </p>
+                        <a href="mailto:contact@joshua-ross.com" class="col-6 btn btn-secondary btn-lg mt-2">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="target-anchor" id="Portfolio"></div>
+        <div class="section container" aria-hidden="true">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h1>Portfolio</h1>
+                    <div id="portfolioContainer" class="row container">
+                        <div class="portfolio-item " data-title="Nuit Blanche 22"
+                            data-description="Project was made during the Humber Galleries Nuit Blanche Fellowship in 2022. Over the span of 14 weeks as a collaborative effort by 8 students from different programs. We created 'Together, Apart', an immersive and interactive digital art experience. The official description was 'An immersive digital art projection invited audiences to witness stories about migration, inclusion, distance, and acceptance, demonstrating how people emerge from hardship – sometimes stronger than ever before.'"
+                            data-details="The software used for visuals was TouchDesigner, a node-based visual programming language for real-time interactive multimedia content. The interactivity was created using several Microsoft Kinects, used to detect motion for particle interactivity and the amount of people for certain effects and audio. FMOD, a sound effects engine and authoring tool, was used for audio. FMOD ran from a custom C# app, communicating with TouchDesigner using the OSC (Open Sound Control) protocol. As TouchDesigner does not have native support for FMOD."
+                            data-video-url="https://www.youtube.com/embed/QeoBEByQGsU"
+                            data-role-tech="Role: Artist/Main Programmer<br>Tech: TouchDesigner, FMOD, Kinects, C#, Python"
+                            data-carousel-id="projectCarousel-1"
+                            data-images='["Images/Nuit22_1.jpg", "Images/Nuit22_2.jpg", "Images/Nuit22_0.jpg"]'
+                            data-type="carousel">
+                        </div>
+
+                        <div class="portfolio-item" data-title="Squeaky Engine"
+                            data-description="My own engine custom-built from scratch. I started this engine as a passion project and learning experience, that I ended up further building and using for my college midstone project."
+                            data-details="It was built in C++ using OpenGL. It incorporates an actor-like entity component system, with a variety of base components, with the ability to easily add more specific to project needs. It has physics incorporated using basic collision shapes. It uses IMGUI for a debugging GUI, which displays every actor in the scene and their components. Many built-in components are modifiable from the GUI and custom ones can be specified in components. It also includes FMOD for audio, albeit in a very basic implementation."
+                            data-video-url="https://www.youtube.com/embed/HlkxlcB0pGw"
+                            data-role-tech="Role: Creator/Lead Programmer/Designer<br>Tech: C++, OpenGL, FMOD"
+                            data-carousel-id="projectCarousel-2"
+                            data-images='["Images/UMLClassDiagram-Components.png", "Images/Squeak1.png", "Images/Squeak2.png"]'
+                            data-type="carousel">
+                        </div>
+
+                        <div class="portfolio-item" data-title="Cadillac Chinese NY Dragon"
+                            data-description="Project was made during the Humber Galleries Nuit Blanche Fellowship in 2022. Over the span of 14 weeks as a collaborative effort by 8 students from different programs. We created 'Together, Apart', an immersive and interactive digital art experience. The official description was 'An immersive digital art projection invited audiences to witness stories about migration, inclusion, distance, and acceptance, demonstrating how people emerge from hardship – sometimes stronger than ever before.'"
+                            data-details="The software used for visuals was TouchDesigner, a node-based visual programming language for real-time interactive multimedia content. The interactivity was created using several Microsoft Kinects, used to detect motion for particle interactivity and the amount of people for certain effects and audio. FMOD, a sound effects engine and authoring tool, was used for audio. FMOD ran from a custom C# app, communicating with TouchDesigner using the OSC (Open Sound Control) protocol. As TouchDesigner does not have native support for FMOD."
+                            data-video-url="https://www.youtube.com/embed/W4PlBzvg7aI"
+                            data-video-url2="https://www.youtube.com/embed/cP-BmeBBgek?si=cjNr8hG8mOYq_C82"
+                            data-role-tech="Role: Artist/Main Programmer<br>Tech: TouchDesigner, FMOD, Kinects, C#, Python"
+                            data-carousel-id="projectCarousel-3"
+                            data-images='["Images/Cadillac1.jpg", "Images/Cadillac2.jpg", "Images/Cadillac3.jpg"]'
+                            data-type="video">
+                        </div>
+
+                        <div class="portfolio-item" data-title="Nuit Blanche 21"
+                            data-description="A 10-minute interactive digital art piece invites you to take on the role of an unnamed character trying to escape the commotions of everyday life."
+                            data-details="After my 2022 Fellowship ended I was brought onto help clean up the technical side of the 2021 Fellowship project, A Way Closer. While not part of the ideation and creation of the process, I worked on the experience much later to help make it much more playable. The piece was built in Unity and as I was already familiar with it, I was able to fix up a lot of bugs and make the experience smoother."
+                            data-video-url="https://www.youtube.com/embed/9mjKH04xlMY?si=_z1E7PM-BmAaO0l_"
+                            data-role-tech="Role: Programmer<br>Tech: Unity, C#, FMOD"
+                            data-carousel-id="projectCarousel-4"
+                            data-images='["Images/Nuit21_1.jpg", "Images/Nuit21_0.jpg", "Images/Nuit21_2.png"]'
+                            data-type="carousel">
+                        </div>
+
+                        <div class="portfolio-item " data-title="Waypoint"
+                            data-description="Semester-long collaboration of over 20 students."
+                            data-details="I made a weapon and pickup system. Enabling picking up and switching between different types of weapons"
+                            data-video-url="https://www.youtube.com/embed/MXQX7C8PsEg?si=HCGxWwjEkj7qwwAL"
+                            data-role-tech="Role: Gameplay/Weapons Programmer<br>Tech: Unreal 5, C++, Blueprints"
+                            data-carousel-id="projectCarousel-5"
+                            data-images='["Images/frame_0000.png", "Images/frame_0080.png", "Images/frame_0039.png"]'
+                            data-type="carousel">
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto text-white-50 text-center py-0">
+        <div class="container">
+            <br>
+            Email: <span class="user-select-all">contact@joshua-ross.com</span>
+            <br>
+            <a href="mailto:contact@joshua-ross.com" class="link-secondary">Send email</a>
+        </div>
+    </footer>
+
+    <template id="portfolioTemplate">
+        <div class="container portfolio-project bg-dark text-start">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="project-title"></h3>
+                    <p class="project-description"></p>
+                </div>
+                <div class="col-lg-6">
+                    <div id="" class="carousel slide project-carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner ratio ratio-16x9">
+                            <div class="carousel-item active">
+                                <img src="" class="d-block w-100 mb-0 p-0" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="" class="d-block w-100 mb-0 p-0" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="" class="d-block w-100 mb-0 p-0" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="project-details"></p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 project-video-container"></div>
+                </div>
+            </div>
+            <div class="row small">
+                <div class="col-6 text-start project-role-tech"></div>
+            </div>
+            <div class="modal fade" id="" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" class="img-fluid w-100" alt="Zoomed Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

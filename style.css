@@ -1,0 +1,144 @@
+body {
+	background: linear-gradient(to bottom, rgb(33, 37, 41) 0%, rgb(33, 37, 41) 25%, rgb(68, 100, 72) 100%);
+	color: whitesmoke;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	/* Ensures proper stacking context */
+}
+
+/* Navbar */
+.navbar {
+
+	line-height: 0.75;
+	text-align: left;
+
+	z-index: 1030;
+}
+
+#Home {}
+
+.navbar-collapse:not(.show),
+.navbar-collapse:not(.collapsing) {
+	margin-bottom: 0;
+	/* Normal state */
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+	margin-bottom: -15vh;
+	/* Negative margin to overlap the padding below */
+}
+
+
+.navbar-brand,
+.sub-brand {
+	transform: scale(1.1);
+}
+
+.nav-item {
+	width: auto;
+	border: 1px inset rgba(255, 255, 255, 0.1);
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+.sub-brand {
+	font-size: xx-small;
+}
+
+.main,
+.header,
+.footer {
+	border: 0pt dashed;
+}
+.portfolio-project{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border: solid 2px #FFFFFF10;
+}
+.main {
+	flex: 1;
+}
+
+.portfolio-item{
+	padding: 0
+}
+
+
+.target-anchor {
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	height: 1px;
+	width: 1px;
+}
+
+.section {
+	display: none;
+	padding-top: 15vh;
+	padding-bottom: 10vh;
+}
+
+.section:target+.section {
+	display: block;
+}
+
+body:not(:has(:target)) #Home+.section {
+	display: block;
+}
+
+#Home:target+.section,
+#About:target+.section,
+#Contact:target+.section,
+#Portfolio:target+.section {
+	display: block;
+}
+
+
+
+
+
+
+
+/* .carousel-item .d-flex {
+	width: 100%;
+	transition: transform 0.0s ease;
+	/* Smooth transition for the sliding effect 
+} */
+/* .carousel-item .d-flex img {
+	width: 33.333%;
+	/* Each image takes up one-third of the container width 
+	flex: 0 0 33.333%;
+	/* Flex basis is also one-third, preventing growth or shrink 
+	max-width: none;
+	/* Override Bootstrap's max-width for images 
+	object-fit: cover;
+} */
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: black;
+	/* Make the arrows visible 
+} */
+
+
+
+
+/* .container {
+	border:1pt dashed;
+}
+
+.container-fluid {
+	border: 1pt dashed;
+} */
+
+/* .col,.col-lg-6, .col-lg-12, .col-lg-8, .col-6 {
+	border: 1pt dashed;
+} */
