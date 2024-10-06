@@ -8,21 +8,27 @@
               rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
         <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body class=" d-flex flex-column justify-content-center min-vh-100">
         <header class="header mb-auto">
-    <nav class="navbar navbar-expand-sm text-dark navbar-dark py-4">
+    <nav class="navbar navbar-expand-sm py-4">
         <div class="container">
             <a class="navbar-brand  fs-1 fw-medium font-monospace text-end" style ="line-height: 1.1rem;" href="/">
                 Joshua Ross <br>
-                <span class="text-end font-monospace sub-brand lh-1 fs-6 fw-light text-secondary " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< EasedMango >> </span>
+                <span class="text-end font-monospace sub-brand lh-2  fw-light text-secondary sb-style">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< EasedMango >></span>
+
                 </a> 
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Add this button within your HTML body -->
+
+
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0 text-center">
                     <li class="nav-item">
@@ -41,6 +47,11 @@
                         <a class="nav-link custom-collapse" href="/portfolio/">Portfolio<span
                                 class="visually-hidden">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="btn mt-1 btn-outline-secondary btn-sm">
+                            <i id="theme-icon" class="bi bi-sun"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,7 +64,16 @@
         <div class="col-lg-12 text-center">
             <h1>Portfolio</h1>
             <div id="portfolioContainer" class="row">
-                  <div class="container-fluid p-0 m-0 "><!-- unique carousel identifier --><!-- current index of item in portfolio --><!-- max items per row --><!-- total items overall -->
+            <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Primary Works
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                <div class="container-fluid p-0 m-0 "><!-- unique carousel identifier --><!-- current index of item in portfolio --><!-- max items per row --><!-- total items overall -->
     <div class="row justify-content-center p-1 m-1"><!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
                 <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalNuitBlanche221" role="button">
 	<div class="card border-secondary w-100 h-100 mb-3">
@@ -77,7 +97,7 @@
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aNuitBlanche221"
             data-bs-slide="prev"
@@ -90,7 +110,7 @@
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/8bZ-W5yVtP-320.webp 320w, /assets/images/8bZ-W5yVtP-640.webp 640w, /assets/images/8bZ-W5yVtP-960.webp 960w, /assets/images/8bZ-W5yVtP-1024.webp 1024w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/8bZ-W5yVtP-320.jpeg" width="1024" height="683" srcset="/assets/images/8bZ-W5yVtP-320.jpeg 320w, /assets/images/8bZ-W5yVtP-640.jpeg 640w, /assets/images/8bZ-W5yVtP-960.jpeg 960w, /assets/images/8bZ-W5yVtP-1024.jpeg 1024w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/3Y1zxBmXP0-320.webp 320w, /assets/images/3Y1zxBmXP0-640.webp 640w, /assets/images/3Y1zxBmXP0-960.webp 960w, /assets/images/3Y1zxBmXP0-1024.webp 1024w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/3Y1zxBmXP0-320.jpeg" width="1024" height="683" srcset="/assets/images/3Y1zxBmXP0-320.jpeg 320w, /assets/images/3Y1zxBmXP0-640.jpeg 640w, /assets/images/3Y1zxBmXP0-960.jpeg 960w, /assets/images/3Y1zxBmXP0-1024.jpeg 1024w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aNuitBlanche221"
             data-bs-slide="next" style="width: 30px;">
@@ -138,7 +158,7 @@ source
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aImpetus2"
             data-bs-slide="prev"
@@ -151,7 +171,7 @@ source
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/orMN0_Pf6A-320.webp 320w, /assets/images/orMN0_Pf6A-640.webp 640w, /assets/images/orMN0_Pf6A-960.webp 960w, /assets/images/orMN0_Pf6A-1280.webp 1280w, /assets/images/orMN0_Pf6A-1600.webp 1600w, /assets/images/orMN0_Pf6A-1920.webp 1920w, /assets/images/orMN0_Pf6A-2560.webp 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/orMN0_Pf6A-320.jpeg" width="2560" height="1440" srcset="/assets/images/orMN0_Pf6A-320.jpeg 320w, /assets/images/orMN0_Pf6A-640.jpeg 640w, /assets/images/orMN0_Pf6A-960.jpeg 960w, /assets/images/orMN0_Pf6A-1280.jpeg 1280w, /assets/images/orMN0_Pf6A-1600.jpeg 1600w, /assets/images/orMN0_Pf6A-1920.jpeg 1920w, /assets/images/orMN0_Pf6A-2560.jpeg 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/BGt81T9De5-320.webp 320w, /assets/images/BGt81T9De5-640.webp 640w, /assets/images/BGt81T9De5-960.webp 960w, /assets/images/BGt81T9De5-1280.webp 1280w, /assets/images/BGt81T9De5-1600.webp 1600w, /assets/images/BGt81T9De5-1920.webp 1920w, /assets/images/BGt81T9De5-2560.webp 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/BGt81T9De5-320.jpeg" width="2560" height="1440" srcset="/assets/images/BGt81T9De5-320.jpeg 320w, /assets/images/BGt81T9De5-640.jpeg 640w, /assets/images/BGt81T9De5-960.jpeg 960w, /assets/images/BGt81T9De5-1280.jpeg 1280w, /assets/images/BGt81T9De5-1600.jpeg 1600w, /assets/images/BGt81T9De5-1920.jpeg 1920w, /assets/images/BGt81T9De5-2560.jpeg 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/shLQjGm0pW-320.webp 320w, /assets/images/shLQjGm0pW-640.webp 640w, /assets/images/shLQjGm0pW-960.webp 960w, /assets/images/shLQjGm0pW-1280.webp 1280w, /assets/images/shLQjGm0pW-1600.webp 1600w, /assets/images/shLQjGm0pW-1920.webp 1920w, /assets/images/shLQjGm0pW-2560.webp 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/shLQjGm0pW-320.jpeg" width="2560" height="1440" srcset="/assets/images/shLQjGm0pW-320.jpeg 320w, /assets/images/shLQjGm0pW-640.jpeg 640w, /assets/images/shLQjGm0pW-960.jpeg 960w, /assets/images/shLQjGm0pW-1280.jpeg 1280w, /assets/images/shLQjGm0pW-1600.jpeg 1600w, /assets/images/shLQjGm0pW-1920.jpeg 1920w, /assets/images/shLQjGm0pW-2560.jpeg 2560w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aImpetus2"
             data-bs-slide="next" style="width: 30px;">
@@ -201,7 +221,7 @@ source
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aCadillacChineseNYDragon3"
             data-bs-slide="prev"
@@ -216,7 +236,7 @@ source
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/VviXzRfG8i-320.webp 320w, /assets/images/VviXzRfG8i-640.webp 640w, /assets/images/VviXzRfG8i-960.webp 960w, /assets/images/VviXzRfG8i-1280.webp 1280w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/VviXzRfG8i-320.jpeg" width="1280" height="720" srcset="/assets/images/VviXzRfG8i-320.jpeg 320w, /assets/images/VviXzRfG8i-640.jpeg 640w, /assets/images/VviXzRfG8i-960.jpeg 960w, /assets/images/VviXzRfG8i-1280.jpeg 1280w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aCadillacChineseNYDragon3"
             data-bs-slide="next" style="width: 30px;">
@@ -257,7 +277,7 @@ source
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aNuitBlanche214"
             data-bs-slide="prev"
@@ -270,7 +290,7 @@ source
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/EbkXBlfSSZ-320.webp 320w, /assets/images/EbkXBlfSSZ-640.webp 640w, /assets/images/EbkXBlfSSZ-960.webp 960w, /assets/images/EbkXBlfSSZ-1200.webp 1200w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/EbkXBlfSSZ-320.jpeg" width="1200" height="590" srcset="/assets/images/EbkXBlfSSZ-320.jpeg 320w, /assets/images/EbkXBlfSSZ-640.jpeg 640w, /assets/images/EbkXBlfSSZ-960.jpeg 960w, /assets/images/EbkXBlfSSZ-1200.jpeg 1200w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/-MGgLCLghm-320.webp 320w, /assets/images/-MGgLCLghm-640.webp 640w, /assets/images/-MGgLCLghm-960.webp 960w, /assets/images/-MGgLCLghm-1280.webp 1280w, /assets/images/-MGgLCLghm-1600.webp 1600w, /assets/images/-MGgLCLghm-1920.webp 1920w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/-MGgLCLghm-320.jpeg" width="1920" height="1080" srcset="/assets/images/-MGgLCLghm-320.jpeg 320w, /assets/images/-MGgLCLghm-640.jpeg 640w, /assets/images/-MGgLCLghm-960.jpeg 960w, /assets/images/-MGgLCLghm-1280.jpeg 1280w, /assets/images/-MGgLCLghm-1600.jpeg 1600w, /assets/images/-MGgLCLghm-1920.jpeg 1920w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aNuitBlanche214"
             data-bs-slide="next" style="width: 30px;">
@@ -317,7 +337,7 @@ source
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aSqueakyEngine5"
             data-bs-slide="prev"
@@ -330,7 +350,7 @@ source
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/L9tbybhDOH-320.webp 320w, /assets/images/L9tbybhDOH-640.webp 640w, /assets/images/L9tbybhDOH-960.webp 960w, /assets/images/L9tbybhDOH-1280.webp 1280w, /assets/images/L9tbybhDOH-1600.webp 1600w, /assets/images/L9tbybhDOH-1915.webp 1915w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/L9tbybhDOH-320.jpeg" width="1915" height="1006" srcset="/assets/images/L9tbybhDOH-320.jpeg 320w, /assets/images/L9tbybhDOH-640.jpeg 640w, /assets/images/L9tbybhDOH-960.jpeg 960w, /assets/images/L9tbybhDOH-1280.jpeg 1280w, /assets/images/L9tbybhDOH-1600.jpeg 1600w, /assets/images/L9tbybhDOH-1915.jpeg 1915w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
             data-bs-target="#aSqueakyEngine5"
             data-bs-slide="next" style="width: 30px;">
@@ -355,22 +375,48 @@ source
 </div>
 </div></p>
 </div>
-<!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
-                <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalWaypoint6" role="button">
+</div><div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="carouselModalLabel">Carousel Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Content will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p></div>
+</div></p>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Smaller/Other
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                <div class="container-fluid p-0 m-0 "><!-- unique carousel identifier --><!-- current index of item in portfolio --><!-- max items per row --><!-- total items overall -->
+    <div class="row justify-content-center p-1 m-1"><!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
+                <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalWaypoint1" role="button">
 	<div class="card border-secondary w-100 h-100 mb-3">
 		<div class="ratio ratio-1x1"><picture><source type="image/webp" srcset="/assets/images/mFCRhRuQn2-320.webp 320w, /assets/images/mFCRhRuQn2-640.webp 640w, /assets/images/mFCRhRuQn2-960.webp 960w, /assets/images/mFCRhRuQn2-1278.webp 1278w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"><img alt="Item" loading="lazy" decoding="async" class="card-img-top object-fit-cover w-100 h-100 p-0 m-0" src="/assets/images/mFCRhRuQn2-320.jpeg" width="1278" height="720" srcset="/assets/images/mFCRhRuQn2-320.jpeg 320w, /assets/images/mFCRhRuQn2-640.jpeg 640w, /assets/images/mFCRhRuQn2-960.jpeg 960w, /assets/images/mFCRhRuQn2-1278.jpeg 1278w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"></picture></div>
 		<h3 class="card-title">Waypoint</h3>
 		<p class="card-text">Game made collaboratively in Unreal Engine 5</p>
 	</div>
 </a></div><div class="modal fade "
-     id="modalWaypoint6"
+     id="modalWaypoint1"
      tabindex="-1"
-     aria-labelledby="modalWaypoint6Label"
+     aria-labelledby="modalWaypoint1Label"
      aria-hidden="true">
     <div class="modal-dialog   modal-dialog-centered modal-dialog-scrollable modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalWaypoint6Label">Waypoint</h5>
+                <h5 class="modal-title" id="modalWaypoint1Label">Waypoint</h5>
                 <button type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
@@ -378,22 +424,22 @@ source
             </div>
             <div class="modal-body m-0 p-0">
                 <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
-            data-bs-target="#aWaypoint6"
+            data-bs-target="#aWaypoint1"
             data-bs-slide="prev"
             style = "width: 30px;">
         <span class="carousel-control-prev-icon" aria-hidden="true" style = "width: 30px;"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <div id="aWaypoint6" class="flex-grow-1  carousel slide ">
+    <div id="aWaypoint1" class="flex-grow-1  carousel slide ">
         <div class="carousel-inner ratio ratio-16x9"><div class="carousel-item active object-fit-contain"><iframe src="https://www.youtube.com/embed/MXQX7C8PsEg?si=HCGxWwjEkj7qwwAL"
                                 allowfullscreen
                                 class=" object-fit-contain img-fluid w-100  h-100"></iframe></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/mFCRhRuQn2-320.webp 320w, /assets/images/mFCRhRuQn2-640.webp 640w, /assets/images/mFCRhRuQn2-960.webp 960w, /assets/images/mFCRhRuQn2-1278.webp 1278w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/mFCRhRuQn2-320.jpeg" width="1278" height="720" srcset="/assets/images/mFCRhRuQn2-320.jpeg 320w, /assets/images/mFCRhRuQn2-640.jpeg 640w, /assets/images/mFCRhRuQn2-960.jpeg 960w, /assets/images/mFCRhRuQn2-1278.jpeg 1278w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div><div class="carousel-item object-fit-contain"><picture><source type="image/webp" srcset="/assets/images/BO-NSfYzkh-320.webp 320w, /assets/images/BO-NSfYzkh-640.webp 640w, /assets/images/BO-NSfYzkh-960.webp 960w, /assets/images/BO-NSfYzkh-1278.webp 1278w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"><img alt="Item" loading="lazy" decoding="async" class="object-fit-contain img-fluid w-100 h-100" src="/assets/images/BO-NSfYzkh-320.jpeg" width="1278" height="720" srcset="/assets/images/BO-NSfYzkh-320.jpeg 320w, /assets/images/BO-NSfYzkh-640.jpeg 640w, /assets/images/BO-NSfYzkh-960.jpeg 960w, /assets/images/BO-NSfYzkh-1278.jpeg 1278w" sizes="(min-width: 75em) 1920px, (min-width: 64em) 1600px, (min-width: 48em) 1280px, (min-width: 30em) 960px, 640px"></picture></div></div>
     </div>
-    <button class="flex-shrink-1 btn btn-outline-dark btn-sm p-0 m-0 border"
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
             type="button"
-            data-bs-target="#aWaypoint6"
+            data-bs-target="#aWaypoint1"
             data-bs-slide="next" style="width: 30px;">
         <span class="carousel-control-next-icon" aria-hidden="true" style = "width: 30px;"></span>
         <span class="visually-hidden">Next</span>
@@ -403,6 +449,168 @@ source
                         <p class = "text-start">
 <p><p>I designed a weapon and pickup system. Allowing many different weapons to be easily swapped and modified. Using C++ at it's core and Blueprints ontop for ease of use. </p></p>
 <p><p>While implemented it was not fully utilized to it's extent available from time constraints.. </p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+</div>
+<!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
+                <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalOldOpenGLDemos2" role="button">
+	<div class="card border-secondary w-100 h-100 mb-3">
+		<div class="ratio ratio-1x1"><picture><source type="image/webp" srcset="/assets/images/xAEkZOjSMM-320.webp 320w, /assets/images/xAEkZOjSMM-640.webp 640w, /assets/images/xAEkZOjSMM-960.webp 960w, /assets/images/xAEkZOjSMM-1280.webp 1280w, /assets/images/xAEkZOjSMM-1600.webp 1600w, /assets/images/xAEkZOjSMM-1920.webp 1920w, /assets/images/xAEkZOjSMM-2556.webp 2556w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"><img alt="Item" loading="lazy" decoding="async" class="card-img-top object-fit-cover w-100 h-100 p-0 m-0" src="/assets/images/xAEkZOjSMM-320.jpeg" width="2556" height="1318" srcset="/assets/images/xAEkZOjSMM-320.jpeg 320w, /assets/images/xAEkZOjSMM-640.jpeg 640w, /assets/images/xAEkZOjSMM-960.jpeg 960w, /assets/images/xAEkZOjSMM-1280.jpeg 1280w, /assets/images/xAEkZOjSMM-1600.jpeg 1600w, /assets/images/xAEkZOjSMM-1920.jpeg 1920w, /assets/images/xAEkZOjSMM-2556.jpeg 2556w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"></picture></div>
+		<h3 class="card-title">Old OpenGL Demos</h3>
+		<p class="card-text">Various graphics and physics demos</p>
+	</div>
+</a></div><div class="modal fade "
+     id="modalOldOpenGLDemos2"
+     tabindex="-1"
+     aria-labelledby="modalOldOpenGLDemos2Label"
+     aria-hidden="true">
+    <div class="modal-dialog   modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalOldOpenGLDemos2Label">Old OpenGL Demos</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0">
+                <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aOldOpenGLDemos2"
+            data-bs-slide="prev"
+            style = "width: 30px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <div id="aOldOpenGLDemos2" class="flex-grow-1  carousel slide ">
+        <div class="carousel-inner ratio ratio-16x9"><div class="carousel-item active object-fit-contain"><iframe src="https://www.youtube.com/embed/4QiVwI7rFlg"
+                                allowfullscreen
+                                class=" object-fit-contain img-fluid w-100  h-100"></iframe></div></div>
+    </div>
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aOldOpenGLDemos2"
+            data-bs-slide="next" style="width: 30px;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container-fluid p-4">
+                        <p class = "text-start">
+<p><p>Demos done for classes. </p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+</div>
+<!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
+                <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalSmallTouchdesignerDemos3" role="button">
+	<div class="card border-secondary w-100 h-100 mb-3">
+		<div class="ratio ratio-1x1"><picture><source type="image/webp" srcset="/assets/images/n2bDS-tVEx-320.webp 320w, /assets/images/n2bDS-tVEx-640.webp 640w, /assets/images/n2bDS-tVEx-960.webp 960w, /assets/images/n2bDS-tVEx-1280.webp 1280w, /assets/images/n2bDS-tVEx-1600.webp 1600w, /assets/images/n2bDS-tVEx-1920.webp 1920w, /assets/images/n2bDS-tVEx-2549.webp 2549w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"><img alt="Item" loading="lazy" decoding="async" class="card-img-top object-fit-cover w-100 h-100 p-0 m-0" src="/assets/images/n2bDS-tVEx-320.jpeg" width="2549" height="1302" srcset="/assets/images/n2bDS-tVEx-320.jpeg 320w, /assets/images/n2bDS-tVEx-640.jpeg 640w, /assets/images/n2bDS-tVEx-960.jpeg 960w, /assets/images/n2bDS-tVEx-1280.jpeg 1280w, /assets/images/n2bDS-tVEx-1600.jpeg 1600w, /assets/images/n2bDS-tVEx-1920.jpeg 1920w, /assets/images/n2bDS-tVEx-2549.jpeg 2549w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"></picture></div>
+		<h3 class="card-title">Small Touchdesigner Demos</h3>
+		<p class="card-text">TD Kinect Demos</p>
+	</div>
+</a></div><div class="modal fade "
+     id="modalSmallTouchdesignerDemos3"
+     tabindex="-1"
+     aria-labelledby="modalSmallTouchdesignerDemos3Label"
+     aria-hidden="true">
+    <div class="modal-dialog   modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalSmallTouchdesignerDemos3Label">Small Touchdesigner Demos</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0">
+                <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aSmallTouchdesignerDemos3"
+            data-bs-slide="prev"
+            style = "width: 30px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <div id="aSmallTouchdesignerDemos3" class="flex-grow-1  carousel slide ">
+        <div class="carousel-inner ratio ratio-16x9"><div class="carousel-item active object-fit-contain"><iframe src="https://www.youtube.com/embed/X_4UT05aHTo"
+                                allowfullscreen
+                                class=" object-fit-contain img-fluid w-100  h-100"></iframe></div></div>
+    </div>
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aSmallTouchdesignerDemos3"
+            data-bs-slide="next" style="width: 30px;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container-fluid p-4">
+                        <p class = "text-start">
+<p><p>Demos in Touchdesigner based on movement and data from a Kinect. </p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+</div>
+<!-- Update unique carouselID for item --><div class="col-6 col-sm-3 col-md-4 col-lg-3 mb-3 p-1">
+                <!-- Responsive column layout --><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalMotiontrackingVr4" role="button">
+	<div class="card border-secondary w-100 h-100 mb-3">
+		<div class="ratio ratio-1x1"><picture><source type="image/webp" srcset="/assets/images/cIl2i8Ubb3-320.webp 320w, /assets/images/cIl2i8Ubb3-640.webp 640w, /assets/images/cIl2i8Ubb3-960.webp 960w, /assets/images/cIl2i8Ubb3-1280.webp 1280w, /assets/images/cIl2i8Ubb3-1600.webp 1600w, /assets/images/cIl2i8Ubb3-1920.webp 1920w, /assets/images/cIl2i8Ubb3-2551.webp 2551w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"><img alt="Item" loading="lazy" decoding="async" class="card-img-top object-fit-cover w-100 h-100 p-0 m-0" src="/assets/images/cIl2i8Ubb3-320.jpeg" width="2551" height="1287" srcset="/assets/images/cIl2i8Ubb3-320.jpeg 320w, /assets/images/cIl2i8Ubb3-640.jpeg 640w, /assets/images/cIl2i8Ubb3-960.jpeg 960w, /assets/images/cIl2i8Ubb3-1280.jpeg 1280w, /assets/images/cIl2i8Ubb3-1600.jpeg 1600w, /assets/images/cIl2i8Ubb3-1920.jpeg 1920w, /assets/images/cIl2i8Ubb3-2551.jpeg 2551w" sizes="(min-width: 75em) 1200px, (min-width: 64em) 1024px, (min-width: 48em) 768px, (min-width: 30em) 480px, 100vw"></picture></div>
+		<h3 class="card-title">Motiontracking Vr</h3>
+		<p class="card-text">Optictrack Quest 2 unreal integration</p>
+	</div>
+</a></div><div class="modal fade "
+     id="modalMotiontrackingVr4"
+     tabindex="-1"
+     aria-labelledby="modalMotiontrackingVr4Label"
+     aria-hidden="true">
+    <div class="modal-dialog   modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMotiontrackingVr4Label">Motiontracking Vr</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0">
+                <div class="container-fluid m-0 p-0"><div class="d-flex overflow-hidden p-0 m-0">
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aMotiontrackingVr4"
+            data-bs-slide="prev"
+            style = "width: 30px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <div id="aMotiontrackingVr4" class="flex-grow-1  carousel slide ">
+        <div class="carousel-inner ratio ratio-16x9"><div class="carousel-item active object-fit-contain"><iframe src="https://www.youtube.com/embed/X_4UT05aHTo"
+                                allowfullscreen
+                                class=" object-fit-contain img-fluid w-100  h-100"></iframe></div></div>
+    </div>
+    <button class="flex-shrink-1 btn  btn-sm p-0 m-0 border"
+            type="button"
+            data-bs-target="#aMotiontrackingVr4"
+            data-bs-slide="next" style="width: 30px;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style = "width: 30px;"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container-fluid p-4">
+                        <p class = "text-start">
+<p><p>tennis racket is an actual tennis racket being tracked. </p>
 </p>
 </div>
 </div>
@@ -425,12 +633,16 @@ source
     </div>
 </div>
 <p></div>
+</div></p>
+  </div>
+</div>
+<p></div>
 </div>
 </div></p>
 </div>
 
         </main>
-        <footer class="footer mt-auto text-white-50 text-center p-0 m-0">
+        <footer class="footer mt-auto  text-center p-0 m-0">
     <div class="container">
         <br>
         Email: <span class="user-select-all">contact@joshua-ross.com</span>

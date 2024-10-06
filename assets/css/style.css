@@ -2,3 +2,16 @@
     padding: 0.25rem 0.5rem;
     width: 30px;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.sb-style{
+    opacity: 0.25;
+    font-size: 0.75rem;
+}
+
+#theme-toggle{
+    size: 10px;
+}
